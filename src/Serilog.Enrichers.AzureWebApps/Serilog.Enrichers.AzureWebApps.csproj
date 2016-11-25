@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzureWebJobsNameEnricher.cs" />
+    <Compile Include="AzureWebJobsTypeEnricher.cs" />
     <Compile Include="AzureWebAppsNameEnricher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

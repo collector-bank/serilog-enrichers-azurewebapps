@@ -54,6 +54,8 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="AzureWebJobsTypeEnricherTest.cs" />
+    <Compile Include="AzureWebJobsNameEnricherTest.cs" />
     <Compile Include="DelegatingSink.cs" />
     <Compile Include="AzureWebAppsNameEnricherTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
