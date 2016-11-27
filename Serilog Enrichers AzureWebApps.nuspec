@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Serilog.Enrichers.AzureWebApps</id>
+    <version>1.0.0</version>
+    <title>Serilog.Enrichers.AzureWebApps</title>
+    <authors>Adam Lith, Mats Iremark, Felix Svensson</authors>
+    <owners>Collector Bank</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Enriches Serilog events with information from Azure App Service runtime</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>serilog enricher azure webapps collectorbank collector</tags>
+	<projectUrl>https://github.com/collector-bank/serilog-enrichers-azurewebapps</projectUrl>
+	<dependencies>
+      <dependency id="Serilog" version="2.0.0" />
+    </dependencies> 
+  </metadata>
+  <files>
+    <file src="src\Serilog.Enrichers.AzureWebApps\bin\release\**" target=""/>
+  </files>
+</package>
