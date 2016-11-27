@@ -14,9 +14,9 @@ Then, apply the enrichers to you `LoggerConfiguration`:
 
 ```csharp
 Log.Logger = new LoggerConfiguration()
-    .Enrich.With(new AzureWebAppsNameEnricher)
-    .Enrich.With(new AzureWebJobsNameEnricher)
-    .Enrich.With(new AzureWebJobsTypeEnricher)
+    .Enrich.With<AzureWebAppsNameEnricher>()
+    .Enrich.With<AzureWebJobsNameEnricher>()
+    .Enrich.With<AzureWebJobsTypeEnricher>()
     // ...other configuration...
     .CreateLogger();
 ```
