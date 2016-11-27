@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Serilog.Enrichers.AzureWebApps</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Serilog.Enrichers.AzureWebApps</title>
     <authors>Adam Lith, Mats Iremark, Felix Svensson</authors>
     <owners>Collector Bank</owners>
@@ -17,6 +17,6 @@
     </dependencies> 
   </metadata>
   <files>
-    <file src="src\Serilog.Enrichers.AzureWebApps\bin\release\**" target=""/>
+    <file src="src\Serilog.Enrichers.AzureWebApps\bin\release\**" target="lib\"/>
   </files>
 </package>
