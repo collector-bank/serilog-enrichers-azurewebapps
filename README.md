@@ -1,8 +1,8 @@
-# serilog-enrichers-azurewebapps
+# Serilog.Enrichers.AzureWebApps
 
 [![Build status](https://ci.appveyor.com/api/projects/status/np642cuxtlrfrnm6/branch/master?svg=true)](https://ci.appveyor.com/project/iremmats/serilog-enrichers-azurewebapps/branch/master)
 
-Enrichers that adds properties from Azure Web Apps environment variables.
+Enrichers that add properties from Azure Web Apps environment variables.
  
 To use the enrichers, first install the NuGet package:
 
@@ -10,7 +10,7 @@ To use the enrichers, first install the NuGet package:
 Install-Package Serilog.Enrichers.AzureWebApps
 ```
 
-Then, apply the enrichers to you `LoggerConfiguration`:
+Then, apply the enrichers to your `LoggerConfiguration`:
 
 ```csharp
 Log.Logger = new LoggerConfiguration()
@@ -25,6 +25,6 @@ Log.Logger = new LoggerConfiguration()
 
 The package includes:
 
- * `AzureWebAppsNameEnricher()` - adds the name of the Azure WebApp the application runs within
- * `AzureWebJobsNameEnricher()` - adds the name of the Azure WebJob (if the application is a webjob)
- * `AzureWebJobsTypeEnricher()` - adds the typename of the Azure WebJob (continious or triggered)
+ * `AzureWebAppsNameEnricher` - adds the name of the Azure WebApp the application runs within
+ * `AzureWebJobsNameEnricher` - adds the name of the Azure WebJob (if the application is a WebJob)
+ * `AzureWebJobsTypeEnricher` - adds the type name of the Azure WebJob (continuous or triggered)
