@@ -7,7 +7,7 @@ Enrichers that add properties from Azure Web Apps environment variables.
 To use the enrichers, first install the NuGet package:
 
 ```powershell
-Install-Package Serilog.Enrichers.AzureWebApps
+Install-Package Collector.Serilog.Enrichers.AzureWebApps
 ```
 
 Then, apply the enrichers to your `LoggerConfiguration`:

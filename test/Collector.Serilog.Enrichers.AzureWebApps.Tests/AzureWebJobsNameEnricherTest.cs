@@ -1,9 +1,10 @@
-﻿
-using System;
+﻿using System;
 using NUnit.Framework;
+using Serilog;
+using Serilog.Enrichers.AzureWebApps;
 using Serilog.Events;
 
-namespace Serilog.Enrichers.AzureWebApps.UnitTest
+namespace Collector.Serilog.Enrichers.AzureWebApps.Tests
 {
     public class AzureWebJobsNameEnricherTest
     {

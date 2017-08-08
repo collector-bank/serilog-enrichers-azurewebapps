@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
+	<DebugType>portable</DebugType>
+    <AssemblyName>Collector.Serilog.Enrichers.AzureWebApps</AssemblyName>
+    <PackageId>Collector.Serilog.Enrichers.AzureWebApps</PackageId>
+    <Version>2.0.0</Version>
+    <Copyright>Copyright © 2017</Copyright>
+    <Authors>Team Håkan Hellström</Authors>
+    <PackageProjectUrl>https://github.com/collector-bank/serilog-enrichers-azurewebapps</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/collector-bank/serilog-enrichers-azurewebapps</RepositoryUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Enriches Serilog events with information from Azure App Service runtime.</Description>
+    <PackageIconUrl>https://serilog.net/images/serilog-enricher-nuget.png</PackageIconUrl>
+    <Company>Collector Bank AB</Company>
+    <PackageTags>serilog azure webapp enricher</PackageTags>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.5.0" />
+  </ItemGroup>
+
+</Project>

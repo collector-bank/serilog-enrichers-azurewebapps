@@ -1,10 +1,10 @@
-﻿namespace Serilog.Enrichers.AzureWebApps.UnitTest
+﻿using System;
+using Serilog;
+using Serilog.Core;
+using Serilog.Events;
+
+namespace Collector.Serilog.Enrichers.AzureWebApps.Tests
 {
-    using System;
-
-    using Serilog.Core;
-    using Serilog.Events;
-
     public class DelegatingSink : ILogEventSink
     {
         readonly Action<LogEvent> _write;

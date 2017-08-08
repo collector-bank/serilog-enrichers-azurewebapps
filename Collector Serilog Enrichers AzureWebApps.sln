@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collector.Serilog.Enrichers.AzureWebApps", "src\Collector.Serilog.Enrichers.AzureWebApps\Collector.Serilog.Enrichers.AzureWebApps.csproj", "{BCA3B1B5-FF11-407F-8766-70EE3DDFD9EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{50195941-A332-463A-B26F-A77AE80134F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FC367BB4-3A9E-4E1C-926B-9361B1E930C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collector.Serilog.Enrichers.AzureWebApps.Tests", "test\Collector.Serilog.Enrichers.AzureWebApps.Tests\Collector.Serilog.Enrichers.AzureWebApps.Tests.csproj", "{AA5D3422-1C34-4DE8-953E-7CA7F46F974D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA3B1B5-FF11-407F-8766-70EE3DDFD9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA3B1B5-FF11-407F-8766-70EE3DDFD9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA3B1B5-FF11-407F-8766-70EE3DDFD9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA3B1B5-FF11-407F-8766-70EE3DDFD9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5D3422-1C34-4DE8-953E-7CA7F46F974D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5D3422-1C34-4DE8-953E-7CA7F46F974D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5D3422-1C34-4DE8-953E-7CA7F46F974D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5D3422-1C34-4DE8-953E-7CA7F46F974D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BCA3B1B5-FF11-407F-8766-70EE3DDFD9EE} = {50195941-A332-463A-B26F-A77AE80134F6}
+		{AA5D3422-1C34-4DE8-953E-7CA7F46F974D} = {FC367BB4-3A9E-4E1C-926B-9361B1E930C8}
+	EndGlobalSection
+EndGlobal
