@@ -1,5 +1,4 @@
-﻿using System;
-using Serilog.Core;
+﻿using Serilog.Core;
 using Serilog.Events;
 
 namespace Serilog.Enrichers.AzureWebApps
@@ -9,9 +8,8 @@ namespace Serilog.Enrichers.AzureWebApps
         private readonly string _defaultAppName;
 
 
-        public AzureWebAppsNameEnricher()
+        public AzureWebAppsNameEnricher() : this("LOCAL")
         {
-            _defaultAppName = "LOCAL";
         }
 
         public AzureWebAppsNameEnricher(string defaultAppName)
@@ -21,7 +19,12 @@ namespace Serilog.Enrichers.AzureWebApps
 
         public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
         {
-            logEvent.AddPropertyIfAbsent(propertyFactory.CreateProperty("AzureWebAppsName", Environment.GetEnvironmentVariable("WEBSITE_SITE_NAME") ?? _defaultAppName));
+            logEvent.AddPropertyIfAbsent(propertyFactory.CreateProperty("AzureWebAppsName", AzureWebAppsNameHelper.GetWebAppsName(_defaultAppName)));
+            var azureSlotName = AzureWebAppsNameHelper.GetSlotName();
+            if (!string.IsNullOrWhiteSpace(azureSlotName))
+            {
+                logEvent.AddPropertyIfAbsent(propertyFactory.CreateProperty("AzureWebAppsSlotName", azureSlotName));
+            }
         }
     }
 }
